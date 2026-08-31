@@ -73,3 +73,25 @@ header {
     width: 100%;
     max-width: 500px;
 }
+
+.linkinternos {
+    padding: 20px;
+    text-align: center;
+}
+
+.linkinternos a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.linkinternos a:hover {
+    color: #b300ff8f;
+}
+
+.linkinternos ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
