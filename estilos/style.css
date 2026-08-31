@@ -18,6 +18,18 @@ header {
     text-align: center;
 }
 
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: #b300ff8f;
+    font-size: 18px;
+}
+
 .menu ul {
     list-style-type: none;
     display: flex;
