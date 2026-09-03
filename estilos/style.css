@@ -67,7 +67,8 @@ header {
 }
 
 .masreseñasjuegos {
-    background-image: url('https://media.giphy.com/media/l41JZ2Y5x5nTg44Vq/giphy.gif');
+    min-height: 220px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.38), rgba(0, 0, 0, 0.38)), url("../img/nintendo videogames GIF by El Primer Mando.gif");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -106,6 +107,21 @@ header {
 
 .linkinternos a:hover {
     color: #b300ff8f;
+}
+
+.masreseñasjuegos .linkinternos {
+    background-color: transparent;
+    border: 0;
+    box-shadow: none;
+}
+
+.masreseñasjuegos .linkinternos a {
+    color: #ffffff;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.masreseñasjuegos .linkinternos a:hover {
+    color: #9ee7ff;
 }
 
 .linkinternos ul {
