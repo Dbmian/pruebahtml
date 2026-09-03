@@ -66,12 +66,22 @@ header {
     justify-content: center;
 }
 
-.masreseñasjuegos {
+.gif_fondo {
     min-height: 220px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.38), rgba(0, 0, 0, 0.38)), url("../img/nintendo videogames GIF by El Primer Mando.gif");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.gif_videojuegos {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.38), rgba(0, 0, 0, 0.38)), url("../img/games.gif");
+}
+
+.gif_peliculas {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.38), rgba(0, 0, 0, 0.38)), url("../img/movies.gif");
+}
+.gif_canciones {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.38), rgba(0, 0, 0, 0.38)), url("../img/music.gif");
 }
 
 .audio-player {
@@ -109,18 +119,18 @@ header {
     color: #b300ff8f;
 }
 
-.masreseñasjuegos .linkinternos {
+.gif_fondo .linkinternos {
     background-color: transparent;
     border: 0;
     box-shadow: none;
 }
 
-.masreseñasjuegos .linkinternos a {
+.gif_fondo .linkinternos a {
     color: #ffffff;
     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
 }
 
-.masreseñasjuegos .linkinternos a:hover {
+.gif_fondo .linkinternos a:hover {
     color: #9ee7ff;
 }
 
