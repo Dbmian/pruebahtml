@@ -18,11 +18,28 @@
             </ul>
         </div>
     </header>
-    
 
-
-
-
+    <main>
+        <div class="seccion contacto-seccion">
+            <h2>Ideas para próximas reseñas</h2>
+            <p>Comparte tu nombre, tu correo y una sugerencia para el sitio.</p>
+            <form class="formulario-contacto" action="#" method="post">
+                <div class="campo-formulario">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" autocomplete="name" required>
+                </div>
+                <div class="campo-formulario">
+                    <label for="email">Mail</label>
+                    <input type="email" id="email" name="email" autocomplete="email" required>
+                </div>
+                <div class="campo-formulario">
+                    <label for="comentario">Comentario o idea</label>
+                    <textarea id="comentario" name="comentario" rows="6" required></textarea>
+                </div>
+                <button type="submit">Enviar sugerencia</button>
+            </form>
+        </div>
+    </main>
 
     <footer>
         <div class="menu">

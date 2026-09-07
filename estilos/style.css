@@ -56,6 +56,74 @@ header {
     margin-bottom: 10px;
 }
 
+.contacto-seccion {
+    padding: 25px;
+}
+
+.contacto-seccion h2 {
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.contacto-seccion p {
+    margin-bottom: 20px;
+}
+
+.formulario-contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    text-align: left;
+}
+
+.campo-formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.campo-formulario label {
+    color: #333;
+    font-weight: bold;
+}
+
+.campo-formulario input,
+.campo-formulario textarea {
+    border: 1px solid rgba(51, 51, 51, 0.35);
+    border-radius: 6px;
+    box-sizing: border-box;
+    font: inherit;
+    padding: 10px;
+    width: 100%;
+}
+
+.campo-formulario textarea {
+    min-height: 130px;
+    resize: vertical;
+}
+
+.campo-formulario input:focus,
+.campo-formulario textarea:focus {
+    border-color: #8d35ad;
+    outline: 2px solid rgba(141, 53, 173, 0.2);
+}
+
+.formulario-contacto button {
+    align-self: center;
+    background-color: #8d35ad;
+    border: 0;
+    border-radius: 6px;
+    color: #ffffff;
+    cursor: pointer;
+    font: inherit;
+    font-weight: bold;
+    padding: 11px 22px;
+}
+
+.formulario-contacto button:hover {
+    background-color: #70288a;
+}
+
 .masreseñas {
     min-height: 220px;
     border-radius: 12px;
