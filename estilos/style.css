@@ -16,6 +16,7 @@ header {
 .menu {
     padding: 20px;
     text-align: center;
+    font-family: helvetica, sans-serif;
 }
 
 .menu a {
