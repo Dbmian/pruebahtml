@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -11,10 +12,15 @@ header {
     background-color: rgba(255, 255, 255, 0.377);
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 0 16px;
+}
+
+header h1 {
+    overflow-wrap: anywhere;
 }
 
 .menu {
-    padding: 20px;
+    padding: 20px 0;
     text-align: center;
     font-family: helvetica, sans-serif;
 }
@@ -35,6 +41,7 @@ header {
     list-style-type: none;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
@@ -43,7 +50,7 @@ header {
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
+    max-width: 630px;
     margin: 50px auto;
     text-align: center;
 }
@@ -51,10 +58,16 @@ header {
 .seccion p {
     line-height: 1.6;
     margin-bottom: 8px;
+    overflow-wrap: anywhere;
 }
 
 .seccion img {
+    display: block;
+    max-width: 100%;
+    height: auto;
     margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .before-sunrise-img {
@@ -102,6 +115,7 @@ header {
     box-sizing: border-box;
     font: inherit;
     padding: 10px;
+    max-width: 100%;
     width: 100%;
 }
 
@@ -161,7 +175,7 @@ header {
 }
 
 .audio-player {
-    max-width: 600px;
+    max-width: 100%;
     margin: 0 auto 40px;
     border-radius: 10px;
     text-align: center;
@@ -214,5 +228,46 @@ header {
     list-style-type: none;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 20px;
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 0 12px;
+    }
+
+    .menu {
+        padding: 16px 0;
+    }
+
+    .menu ul,
+    .linkinternos ul {
+        column-gap: 16px;
+        row-gap: 12px;
+    }
+
+    .seccion {
+        margin: 24px 12px;
+        padding: 12px;
+    }
+
+    .contacto-seccion {
+        padding: 18px 14px;
+    }
+
+    .linkinternos,
+    .audio-player {
+        padding: 16px 8px;
+    }
+
+    .audio-player audio {
+        display: block;
+        width: 100%;
+    }
+
+    .gif_fondo,
+    .masreseñas {
+        min-height: 180px;
+    }
 }
