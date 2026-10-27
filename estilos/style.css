@@ -232,6 +232,23 @@ header h1 {
     gap: 20px;
 }
 
+@media (min-width: 768px) {
+    .reseñas-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 24px;
+        max-width: 1320px;
+        margin: 50px auto;
+        padding: 0 15px;
+    }
+
+    .reseñas-grid .seccion {
+        width: 100%;
+        max-width: none;
+        margin: 0;
+    }
+}
+
 @media (max-width: 600px) {
     header {
         padding: 0 12px;
