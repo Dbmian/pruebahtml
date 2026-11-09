@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,7 +23,8 @@
         <div class="seccion contacto-seccion">
             <h2>Ideas para próximas reseñas</h2>
             <p>Comparte tu nombre, tu correo y una sugerencia para el sitio.</p>
-                    <form class="formulario-contacto" action="https://formsubmit.co/0a820550f81e804b0469c82b272486e4" method="POST">                <div class="campo-formulario">
+            <form class="formulario-contacto" action="https://formsubmit.co/0a820550f81e804b0469c82b272486e4" method="POST">
+                <div class="campo-formulario">
                     <label for="nombre">Nombre</label>
                     <input type="text" id="nombre" name="nombre" autocomplete="name" required>
                 </div>
@@ -39,6 +40,7 @@
                 <input type="hidden" name="_captcha" value="false">
                 <button type="submit">Enviar sugerencia</button>
             </form>
+            <p class="estado-envio" id="estado-envio" role="status" aria-live="polite" hidden></p>
         </div>
     </main>
 
@@ -47,5 +49,6 @@
             <p>2024 Reseñas Damy. Todos los derechos reservados.</p>
         </div>
     </footer>
+    <script src="../js/contacto.js"></script>
 </body>
 </html>

@@ -203,6 +203,28 @@ header h1 {
     background-color: #70288a;
 }
 
+.formulario-contacto button:disabled {
+    cursor: wait;
+    opacity: 0.7;
+}
+
+.estado-envio:not([hidden]) {
+    background-color: rgba(141, 53, 173, 0.1);
+    border-radius: 6px;
+    color: #522064;
+    display: block;
+    font-weight: bold;
+    margin: 16px auto 0;
+    padding: 10px 14px;
+    text-align: center;
+    width: fit-content;
+}
+
+.estado-envio.error {
+    background-color: rgba(179, 0, 0, 0.1);
+    color: #8b0000;
+}
+
 .masreseñas {
     min-height: 220px;
     border-radius: 12px;
