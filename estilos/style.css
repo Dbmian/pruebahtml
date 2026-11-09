@@ -154,6 +154,11 @@ header h1 {
     text-align: left;
 }
 
+.formulario-contacto[hidden],
+.otra-sugerencia[hidden] {
+    display: none;
+}
+
 .campo-formulario {
     display: flex;
     flex-direction: column;
@@ -220,9 +225,34 @@ header h1 {
     width: fit-content;
 }
 
+.estado-envio.exito:not([hidden]) {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    min-height: 130px;
+    width: 100%;
+}
+
 .estado-envio.error {
     background-color: rgba(179, 0, 0, 0.1);
     color: #8b0000;
+}
+
+.otra-sugerencia {
+    background-color: #8d35ad;
+    border: 0;
+    border-radius: 6px;
+    color: #ffffff;
+    cursor: pointer;
+    display: block;
+    font: inherit;
+    font-weight: bold;
+    margin: 16px auto 0;
+    padding: 11px 22px;
+}
+
+.otra-sugerencia:hover {
+    background-color: #70288a;
 }
 
 .masreseñas {
