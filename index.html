@@ -19,40 +19,42 @@
         </div>
     </header>
     
-    <div class="seccion">
-        <section>
-            <h2>Reseña destacada</h2>
-            <img src="./img/In_the_Court_of_the_Crimson_King_-_40th_Anniversary_Box_Set_-_Front_cover.jpeg" alt="in the court of the crimson king">
-            <p>In the court of the crimson king es el primer album de la banda King Crimson El album presenta una combinación de elementos de rock, jazz y música experimental, característica de la banda.</p>
-            <p>Lanzado el 10 de octubre de 1969, conteniendo un total de 5 canciones, es una obra maestra del rock experimental, dando forma a una era innovadora en la música, con su canción "21st Century Schizoid Man" siendo una de las canciones más icónicas de la banda.</p>
-            <h3>Nota final</h3>
-            <p>8.5/10</p>
-                <div class="audio-player">
-                    <h3>Escuchá el adelanto de una canción</h3>
-                        <audio controls>
-                            <source src="./audios/21st Century Schizoid Man.mp3" type="audio/mpeg">
-                            Tu navegador no soporta el elemento de audio.
-                        </audio>
-                </div>
-            <h4>Donde escucharlo</h4>
-                <div class ="linkinternos">
-                        <ul>
-                        <li><a href="https://www.youtube.com/watch?v=0ju5LRTMFLw&t=4s" target="_blank">YouTube</a></li>
-                        <li><a href="https://open.spotify.com/intl-es/album/75ol9OP8bJaRqzGimpFHDm?si=dKhCyKQ-SFubprNWoMNZog" target="_blank">Spotify</a></li>
-                        <li><a href="https://music.apple.com/ar/album/in-the-court-of-the-crimson-king-expanded-edition/918534711" target="_blank">Apple Music</a></li>
-                    </ul>
-                </div>
+    <div class="reseñas-grid">
+        <div class="seccion">
+            <section>
+                <h2>Reseña destacada</h2>
+                <img src="./img/In_the_Court_of_the_Crimson_King_-_40th_Anniversary_Box_Set_-_Front_cover.jpeg" alt="in the court of the crimson king">
+                <p>In the court of the crimson king es el primer album de la banda King Crimson El album presenta una combinación de elementos de rock, jazz y música experimental, característica de la banda.</p>
+                <p>Lanzado el 10 de octubre de 1969, conteniendo un total de 5 canciones, es una obra maestra del rock experimental, dando forma a una era innovadora en la música, con su canción "21st Century Schizoid Man" siendo una de las canciones más icónicas de la banda.</p>
+                <h3>Nota final</h3>
+                <p>8.5/10</p>
+                    <div class="audio-player">
+                        <h3>Escuchá el adelanto de una canción</h3>
+                            <audio controls>
+                                <source src="./audios/21st Century Schizoid Man.mp3" type="audio/mpeg">
+                                Tu navegador no soporta el elemento de audio.
+                            </audio>
+                    </div>
+                <h4>Donde escucharlo</h4>
+                    <div class ="linkinternos">
+                            <ul>
+                            <li><a href="https://www.youtube.com/watch?v=0ju5LRTMFLw&t=4s" target="_blank">YouTube</a></li>
+                            <li><a href="https://open.spotify.com/intl-es/album/75ol9OP8bJaRqzGimpFHDm?si=dKhCyKQ-SFubprNWoMNZog" target="_blank">Spotify</a></li>
+                            <li><a href="https://music.apple.com/ar/album/in-the-court-of-the-crimson-king-expanded-edition/918534711" target="_blank">Apple Music</a></li>
+                        </ul>
+                    </div>
+            </section>
+        </div>
+        <section class="seccion recomendador">
+            <h2>¿Qué pensás hacer hoy?</h2>
+            <div class="ideas-aleatorias">
+                <button type="button" id="btn-pelicula">Película aleatoria para ver</button>
+                <button type="button" id="btn-cancion">Canción aleatoria para escuchar</button>
+                <button type="button" id="btn-juego">Juego aleatorio para jugar</button>
+            </div>
+            <div id="resultado-pelicula" class="resultado-pelicula" aria-live="polite" aria-atomic="true"></div>
         </section>
     </div>
-    <section class="seccion recomendador">
-        <h2>¿Qué pensás hacer hoy?</h2>
-        <div class="ideas-aleatorias">
-            <button type="button" id="btn-pelicula">Película aleatoria para ver</button>
-            <button type="button" id="btn-cancion">Canción aleatoria para escuchar</button>
-            <button type="button" id="btn-juego">Juego aleatorio para jugar</button>
-        </div>
-        <div id="resultado-pelicula" class="resultado-pelicula" aria-live="polite" aria-atomic="true"></div>
-    </section>
 
     <footer>
         <div class="menu">

@@ -296,6 +296,10 @@ header h1 {
         max-width: none;
         margin: 0;
     }
+
+    .reseñas-grid .recomendador {
+        align-self: start;
+    }
 }
 
 @media (max-width: 600px) {
