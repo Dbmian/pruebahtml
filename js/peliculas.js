@@ -1,6 +1,6 @@
 
 const botonPelicula = document.getElementById("btn-pelicula");
-const resultado = document.getElementById("resultado-pelicula");
+const resultado = document.getElementById("resultado-recomendacion");
 
 const peliculas = [
     {
@@ -161,6 +161,10 @@ function peliculaAleatoria() {
 
     const pelicula = peliculas[numero];
 
+    const etiqueta = document.createElement("p");
+    etiqueta.className = "etiqueta-recomendacion";
+    etiqueta.textContent = "Película elegida";
+
     const titulo = document.createElement("h3");
     titulo.textContent = pelicula.titulo;
 
@@ -175,7 +179,7 @@ function peliculaAleatoria() {
 
     resultado.replaceChildren();
 
-    resultado.append(titulo, año, genero, descripcion);
+    resultado.append(etiqueta, titulo, año, genero, descripcion);
 }
 
 botonPelicula.addEventListener("click", peliculaAleatoria);
