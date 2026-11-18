@@ -349,11 +349,42 @@ header h1 {
 
 .navegacion-inicio {
     order: -1;
-    padding: 16px 0;
+    background-color: #f0d7fa;
+    border: 1px solid rgba(112, 40, 138, 0.25);
+    border-left: 5px solid #8d35ad;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(112, 40, 138, 0.16);
+    padding: 12px;
+}
+
+.navegacion-inicio h2 {
+    color: #522064;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
 }
 
 .navegacion-inicio ul {
-    gap: 12px;
+    gap: 8px;
+}
+
+.navegacion-inicio a {
+    background-color: #ffffff;
+    border-radius: 6px;
+    color: #522064;
+    display: block;
+    padding: 10px 12px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.navegacion-inicio a:hover {
+    background-color: #70288a;
+    color: #ffffff;
+}
+
+.inicio-lateral {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
 .inicio-grid .seccion {
@@ -414,40 +445,14 @@ header h1 {
     }
 
     .inicio-grid {
-        grid-template-areas:
-            "destacada navegacion"
-            "destacada recomendador";
+        align-items: start;
+        align-content: start;
         grid-template-columns: minmax(0, 1.35fr) minmax(300px, 0.85fr);
     }
 
-    .inicio-grid .reseña-destacada {
-        grid-area: destacada;
-    }
-
-    .inicio-grid .navegacion-inicio {
-        grid-area: navegacion;
-    }
-
-    .inicio-grid .recomendador {
-        grid-area: recomendador;
-    }
-
     .navegacion-inicio {
-        background-color: rgba(255, 255, 255, 0.55);
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        padding: 8px;
-    }
-
-    .navegacion-inicio ul {
-        gap: 8px;
-    }
-
-    .navegacion-inicio a {
-        background-color: rgba(255, 255, 255, 0.75);
-        border-radius: 6px;
-        display: block;
-        padding: 10px 12px;
+        align-self: start;
+        width: 100%;
     }
 
     .reseñas-grid .recomendador {
