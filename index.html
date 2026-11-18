@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,17 +10,10 @@
 <body>
     <header>
         <h1>Todo Reseñas</h1>
-        <div class ="menu">
-            <ul>
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./Pages/Reseña_gral.html">Mas reseñas</a></li>
-                <li><a href="./Pages/contacto.html">Contacto</a></li>
-            </ul>
-        </div>
     </header>
     
-    <div class="reseñas-grid">
-        <div class="seccion">
+    <main class="reseñas-grid inicio-grid">
+        <div class="seccion reseña-destacada">
             <section>
                 <h2>Reseña destacada</h2>
                 <img src="./img/In_the_Court_of_the_Crimson_King_-_40th_Anniversary_Box_Set_-_Front_cover.jpeg" alt="in the court of the crimson king">
@@ -45,16 +38,24 @@
                     </div>
             </section>
         </div>
+        <nav class="menu navegacion-inicio" aria-label="Navegación principal">
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./Pages/Reseña_gral.html">Más reseñas</a></li>
+                <li><a href="./Pages/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
         <section class="seccion recomendador">
             <h2>¿Qué pensás hacer hoy?</h2>
+            <p>Elegí una categoría para recibir una recomendación. Podés cambiar de opción cuando quieras.</p>
             <div class="ideas-aleatorias">
-                <button type="button" id="btn-pelicula">Película aleatoria para ver</button>
-                <button type="button" id="btn-cancion">Canción aleatoria para escuchar</button>
-                <button type="button" id="btn-juego">Juego aleatorio para jugar</button>
+                <button type="button" id="btn-pelicula">Película <span>Una idea para ver</span></button>
+                <button type="button" id="btn-cancion">Canción <span>Una idea para escuchar</span></button>
+                <button type="button" id="btn-juego">Videojuego <span>Una idea para jugar</span></button>
             </div>
             <div id="resultado-recomendacion" class="resultado-recomendacion" aria-live="polite" aria-atomic="true"></div>
         </section>
-    </div>
+    </main>
 
     <footer>
         <div class="menu">
